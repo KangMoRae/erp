@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>ELC - Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta property="og:description" content="ELC - Eco Leader Cooperation">
+        <meta property="og:image" content="vendors/images/logo.png">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="vendors/styles/core.css">
+        <link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+        
+        <!--폰트어썸 cdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+
+    
+<body>
+
+
+    
+    <!--컨테이너 시작-->
+	<div class="">
+        <!--내용 시작-->
+		<div class="login-wrap d-flex align-items-center flex-wrap justify-content-center">
+                <div class="align-items-center">
+                    <div class="login_wrap">
+                        <div class="login-box bg-white box-shadow border-radius-10">
+                            <div class="login-title">
+                                <img src="vendors/images/logo.png">
+                                <h2 class="text-center text-primary">ADMINISTRATOR LOGIN</h2>
+                            </div>
+                            <form>
+                                <div class="input-group custom">
+                                    <input type="text" class="form-control form-control-lg" placeholder="ID">
+                                    <div class="input-group-append custom">
+                                        <span class="input-group-text"><i class="icon-copy dw dw-user1"></i></span>
+                                    </div>
+                                </div>
+                                <div class="input-group custom">
+                                    <input type="password" class="form-control form-control-lg" placeholder="Password">
+                                    <div class="input-group-append custom">
+                                        <span class="input-group-text"><i class="dw dw-padlock1"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="input-group mb-0">
+                                            <a class="btn btn-primary btn-lg btn-block" href="index.html">로그인</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 pt-10">
+                                        <div class="input-group mb-0">
+                                            <a class="btn-block" data-toggle="modal" data-target="#success-modal" type="button">로그인 오류났을때 얼럿창</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pass_help font_14 pt-30">
+                                    <div class="forgot-password">
+                                        <a class="btn-inline-block" data-backdrop="static" data-toggle="modal" data-target="#login-modal" type="button">비밀번호 변경</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <p class="font_14">Copyrights Ministry of environment. All Right Reserved.</p>
+                    </div>
+                </div>
+        </div>
+        <!--내용 끝-->
+        
+    </div>
+    <!--컨테이너 끝-->
+    
+    <!--로그인 오류 얼럿창 시작-->
+    <div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center font-18">
+                    <div class="mb-20 text-center notice_icon">
+                        <i class="fa fa-exclamation-triangle"></i>
+                    </div>
+                    아이디 또는 패스워드가 일치하지 않습니다.
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--로그인 오류 얼럿창 끝-->
+    
+    
+    <!--비밀번호 초기화 모달창 시작-->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="login-box bg-white box-shadow border-radius-10">
+                    <div class="login-title">
+                        <h2 class="text-center text-primary mb-20">비밀번호 변경</h2>
+                        <p class="font_14">※ 비밀번호 초기화 이후, 최초 로그인 시 비밀번호를 변경하셔야 합니다.<br>
+                        (비밀번호 규칙 : 한글/영문/숫자 중 최소 2가지 이상, 8글자 이상)</p>
+                    </div>
+                    <form>
+                        <div class="input-group custom">
+                            <input type="password" class="form-control form-control-lg" placeholder="비밀번호">
+                            <div class="input-group-append custom">
+                                <span class="input-group-text"><i class="dw dw-padlock1"></i></span>
+                            </div>
+                        </div>
+                        <div class="input-group custom">
+                            <input type="password" class="form-control form-control-lg" placeholder="비밀번호 확인">
+                            <div class="input-group-append custom">
+                                <span class="input-group-text"><i class="dw dw-padlock1"></i></span>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">취소</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#success-modal2" type="button">확인</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#alert-modal" type="button">불일치</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#alert-modal2" type="button">규칙확인</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--비밀번호 초기화 모달창 끝-->
+    
+    
+    <!--비밀번호 변경 성공 알림창 시작-->
+    <div class="modal fade" id="success-modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center font-18">
+                    <div class="mb-30 text-center"><img src="vendors/images/success.png"></div>
+                    비밀번호가 정상적으로 변경되었습니다.
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary" onclick="location.href='index.html'">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--비밀번호 변경 성공 알림창 끝-->
+    
+    
+    <!--비밀번호 불일치 알림창 시작-->
+    <div class="modal fade" id="alert-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content bg-danger text-white">
+                <div class="modal-body text-center">
+                    <h3 class="text-white mb-15"><i class="fa fa-exclamation-triangle"></i></h3>
+                    <p>비밀번호와 비밀번호 확인 정보가<br>불일치합니다.</p>
+                    <button type="button" class="btn btn-light" data-dismiss="modal">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--비밀번호 불일치 알림창 끝-->
+    
+    <!--비밀번호 규칙확인 알림창 시작-->
+    <div class="modal fade" id="alert-modal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content bg-danger text-white">
+                <div class="modal-body text-center">
+                    <h3 class="text-white mb-15"><i class="fa fa-exclamation-triangle"></i></h3>
+                    <p>비밀번호 규칙을 확인해주세요.</p>
+                    <button type="button" class="btn btn-light" data-dismiss="modal">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--비밀번호 규칙확인 알림창 끝-->
+
+    
+</body>
+    
+    
+    <!-- Script js-->
+    <script src="vendors/scripts/core.js"></script>
+    <script src="vendors/scripts/script.min.js"></script>
+    <script src="vendors/scripts/process.js"></script>
+    <script src="vendors/scripts/layout-settings.js"></script>
+    
+</html>
